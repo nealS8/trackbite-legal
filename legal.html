@@ -1,192 +1,236 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TrackBite – Legal Notice & Privacy Policy</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TrackBite – Datenschutzerklärung & Impressum</title>
   <style>
     body {
       font-family: system-ui, sans-serif;
-      margin: 2rem auto;
-      padding: 0 1rem;
+      margin: 40px auto;
       max-width: 800px;
       line-height: 1.6;
       color: #222;
+      padding: 0 15px;
     }
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    h1, h2, h3 {
+      color: #333;
     }
-    h1 { color: #3b0a45; }
-    nav button {
-      border: none;
-      background: #eee;
+    .lang-toggle {
+      text-align: right;
+      margin-bottom: 20px;
+    }
+    .lang-toggle button {
+      margin-left: 10px;
       padding: 6px 10px;
-      margin-left: 6px;
       border-radius: 6px;
+      border: 1px solid #ccc;
+      background: #f5f5f5;
       cursor: pointer;
     }
-    nav button.active {
-      background: #3b0a45;
-      color: white;
+    .lang-toggle button:hover {
+      background: #e8e8e8;
     }
-    section { margin-top: 2rem; }
-    h2 { margin-top: 1.8rem; color: #3b0a45; }
-    footer { margin-top: 3rem; font-size: 0.9em; color: #666; }
+    .en, .de {
+      display: none;
+    }
+    .visible {
+      display: block;
+    }
+    footer {
+      margin-top: 60px;
+      font-size: 0.9em;
+      color: #555;
+      border-top: 1px solid #ddd;
+      padding-top: 20px;
+    }
   </style>
 </head>
 <body>
-  <header>
-    <h1>TrackBite</h1>
-    <nav>
-      <button id="btn-en" class="active">EN</button>
-      <button id="btn-de">DE</button>
-    </nav>
-  </header>
+  <div class="lang-toggle">
+    <span>Sprache / Language:</span>
+    <button onclick="setLang('de')">Deutsch</button>
+    <button onclick="setLang('en')">English</button>
+  </div>
 
-  <main id="content-en">
+  <!-- 🇩🇪 Deutsch -->
+  <div id="content-de" class="de visible">
+    <h1>Datenschutzerklärung</h1>
+    <p><strong>Stand:</strong> Oktober 2025</p>
 
-    <section>
-      <h2>Privacy Policy</h2>
-      <p>
-        TrackBite ("the App") respects your privacy. All nutrition data, meals, and user preferences
-        are stored locally on your device. No personal information is transmitted to our servers.
-      </p>
-      <p>
-        The App displays advertisements through <strong>Google AdMob</strong>. AdMob may collect
-        anonymous usage data and device identifiers to provide relevant ads. Please review
-        Google's <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a>
-        for details.
-      </p>
-      <p>
-        TrackBite offers an optional <strong>Premium version</strong> via monthly subscription.
-        The Premium version removes ads and may unlock additional features.
-      </p>
-      <p>
-        In future updates, users may be able to create accounts and upload dishes online
-        for ranking purposes. In that case, additional consent and security measures will be introduced.
-      </p>
-    </section>
+    <h2>1. Allgemeines</h2>
+    <p>
+      TrackBite speichert alle Ernährungsdaten, Mahlzeiten und Benutzereinstellungen ausschließlich lokal auf Ihrem Gerät.
+      Es werden keine personenbezogenen Daten an unsere Server übermittelt.
+    </p>
 
-    <section>
-      <h2>Legal Notice (Impressum)</h2>
-      <p><strong>Company:</strong> [CompanyName]</p>
-      <p><strong>City:</strong> Weiden in der Oberpfalz, Germany</p>
-      <p><strong>Contact:</strong> <a href="mailto:nealsamanski@googlemail.com">nealsamanski@googlemail.com</a></p>
-    </section>
+    <h2>2. Werbung (Google AdMob)</h2>
+    <p>
+      Diese App verwendet Google AdMob, einen Dienst von Google LLC, zur Anzeige von Werbung.
+      AdMob kann anonyme Nutzungsdaten erfassen, um personalisierte Werbung bereitzustellen.
+      Weitere Informationen finden Sie in der <a href="https://policies.google.com/privacy" target="_blank">Datenschutzerklärung von Google</a>.
+    </p>
 
-    <section>
-      <h2>Disclaimer</h2>
-      <p>
-        The nutritional values and recommendations in TrackBite are for informational purposes only
-        and not a substitute for professional medical advice. Although data is sourced from verified
-        databases, we cannot guarantee absolute accuracy.
-      </p>
-      <p>
-        The developer is not liable for damages arising from the use of this App.
-        Users are responsible for verifying food information as needed.
-      </p>
-    </section>
+    <h2>3. Premium-Version</h2>
+    <p>
+      Nutzer können eine optionale Premium-Version erwerben, um Werbung zu entfernen und zusätzliche Funktionen freizuschalten.
+      Zahlungen erfolgen ausschließlich über den Google Play Store. Es werden keine Zahlungsdaten in dieser App gespeichert.
+    </p>
 
-    <section>
-      <h2>Data Sources</h2>
-      <ul>
-        <li>USDA FoodData Central</li>
-        <li>Australian Food Composition Database – Release 2.0</li>
-        <li>USDA Table of Nutrient Retention Factors – Release 6</li>
-        <li>Antal Bognár: Tables on Weight Yield of Food and Retention Factors of Food Constituents</li>
-        <li>U.S. Department of Agriculture – Dietary Guidelines for Americans 2020–2025</li>
-      </ul>
-    </section>
+    <h2>4. Zukünftige Online-Funktionen</h2>
+    <p>
+      Geplant ist, künftig ein Benutzerkonto einzuführen, mit dem Gerichte online bewertet und verglichen werden können.
+      Bis dahin erfolgt die gesamte Datenspeicherung lokal auf dem Gerät.
+    </p>
 
-    <footer>
-      <p>© 2025 [CompanyName] – TrackBite. All rights reserved.</p>
-    </footer>
-  </main>
+    <h2>5. Ihre Rechte</h2>
+    <p>
+      Sie haben das Recht, Auskunft über die von Ihnen gespeicherten Daten zu erhalten, sowie das Recht auf Löschung und Berichtigung.
+      Da alle Daten lokal gespeichert werden, können Sie diese durch Löschen der App vollständig entfernen.
+    </p>
 
-  <!-- 🇩🇪 German content -->
-  <main id="content-de" style="display:none;">
+    <h2>6. Kontakt</h2>
+    <p>
+      Bei Fragen zum Datenschutz wenden Sie sich bitte an:<br>
+      <strong>E-Mail:</strong> <a href="mailto:nealsamanski@googlemail.com">nealsamanski@googlemail.com</a>
+    </p>
 
-    <section>
-      <h2>Datenschutzerklärung</h2>
-      <p>
-        TrackBite („die App“) respektiert Ihre Privatsphäre. Alle Ernährungsdaten, Mahlzeiten und
-        Benutzereinstellungen werden ausschließlich lokal auf Ihrem Gerät gespeichert.
-        Es werden keine personenbezogenen Daten an unsere Server übermittelt.
-      </p>
-      <p>
-        Die App zeigt Werbung über <strong>Google AdMob</strong> an. Dabei kann AdMob anonyme Nutzungsdaten
-        und Gerätekennungen erfassen, um relevante Anzeigen bereitzustellen. Weitere Informationen finden Sie
-        in der <a href="https://policies.google.com/privacy" target="_blank">Datenschutzerklärung von Google</a>.
-      </p>
-      <p>
-        TrackBite bietet eine optionale <strong>Premium-Version</strong> im monatlichen Abonnement an.
-        Diese entfernt Werbung und kann zusätzliche Funktionen freischalten.
-      </p>
-      <p>
-        In zukünftigen Versionen können Benutzer Konten erstellen und Gerichte online hochladen,
-        um sie bewerten zu lassen. In diesem Fall werden zusätzliche Datenschutz- und Sicherheitsmaßnahmen
-        implementiert und eine erneute Einwilligung eingeholt.
-      </p>
-    </section>
+    <hr>
 
-    <section>
-      <h2>Impressum</h2>
-      <p><strong>Firma:</strong> [CompanyName]</p>
-      <p><strong>Ort:</strong> Weiden in der Oberpfalz, Deutschland</p>
-      <p><strong>Kontakt:</strong> <a href="mailto:nealsamanski@googlemail.com">nealsamanski@googlemail.com</a></p>
-    </section>
+    <h1>Impressum</h1>
+    <p><strong>Angaben gemäß § 5 TMG / § 55 RStV</strong></p>
+    <p>
+      <strong>TrackBite – [CompanyName] (in Gründung)</strong><br>
+      Weiden in der Oberpfalz<br>
+      Deutschland
+    </p>
 
-    <section>
-      <h2>Haftungsausschluss</h2>
-      <p>
-        Die in TrackBite enthaltenen Nährwerte und Empfehlungen dienen ausschließlich
-        Informationszwecken und ersetzen keine medizinische Beratung.
-        Obwohl die Daten aus verifizierten Quellen stammen, kann keine Gewähr
-        für die absolute Richtigkeit übernommen werden.
-      </p>
-      <p>
-        Der Entwickler übernimmt keine Haftung für Schäden, die durch die Nutzung
-        der App entstehen. Die Nutzer sind dafür verantwortlich, die Angaben
-        zu Lebensmitteln eigenständig zu überprüfen.
-      </p>
-    </section>
+    <p><strong>Kontakt:</strong><br>
+      E-Mail: <a href="mailto:nealsamanski@googlemail.com">nealsamanski@googlemail.com</a><br>
+      Verantwortlich für den Inhalt: Neal Samanski
+    </p>
 
-    <section>
-      <h2>Datenquellen</h2>
-      <ul>
-        <li>USDA FoodData Central</li>
-        <li>Australian Food Composition Database – Release 2.0</li>
-        <li>USDA Table of Nutrient Retention Factors – Release 6</li>
-        <li>Antal Bognár: Tabellen zu Garverlusten und Retentionsfaktoren</li>
-        <li>U.S. Department of Agriculture – Dietary Guidelines for Americans 2020–2025</li>
-      </ul>
-    </section>
+    <h2>Haftungsausschluss</h2>
+    <p>
+      Die Inhalte dieser App und Website wurden mit größter Sorgfalt erstellt.
+      Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann jedoch keine Gewähr übernommen werden.
+      Bei Bekanntwerden von Rechtsverletzungen werden entsprechende Inhalte umgehend entfernt.
+    </p>
 
-    <footer>
-      <p>© 2025 [CompanyName] – TrackBite. Alle Rechte vorbehalten.</p>
-    </footer>
-  </main>
+    <h2>Urheberrecht</h2>
+    <p>
+      Die durch den Betreiber dieser App erstellten Inhalte und Werke unterliegen dem deutschen Urheberrecht.
+      Beiträge Dritter sind als solche gekennzeichnet.
+      Die Vervielfältigung, Bearbeitung und Verbreitung außerhalb der Grenzen des Urheberrechts bedürfen der schriftlichen Zustimmung des jeweiligen Autors.
+    </p>
+
+    <h2>Quellen</h2>
+    <ul>
+      <li>USDA FoodData Central</li>
+      <li>Australian Food Composition Database – Release 2.0</li>
+      <li>USDA Table of Nutrient Retention Factors – Release 6</li>
+      <li>Antal Bognár: Tables on weight yield of food and retention factors of food constituents</li>
+      <li>Dietary Guidelines for Americans 2020–2025</li>
+    </ul>
+  </div>
+
+  <!-- 🇬🇧 English -->
+  <div id="content-en" class="en">
+    <h1>Privacy Policy</h1>
+    <p><strong>Last updated:</strong> October 2025</p>
+
+    <h2>1. General</h2>
+    <p>
+      TrackBite stores all nutrition data, meals, and user preferences locally on your device.
+      No personal data is transmitted to our servers.
+    </p>
+
+    <h2>2. Advertising (Google AdMob)</h2>
+    <p>
+      This app uses Google AdMob (Google LLC) to display ads.
+      AdMob may collect anonymous usage data for ad personalization.
+      For more details, please see Google’s <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a>.
+    </p>
+
+    <h2>3. Premium Version</h2>
+    <p>
+      Users can purchase an optional Premium version to remove ads and unlock extra features.
+      Payments are processed only through the Google Play Store.
+      No payment information is stored in this app.
+    </p>
+
+    <h2>4. Future Online Features</h2>
+    <p>
+      In future versions, user accounts may be introduced to allow online dish rankings and comparisons.
+      Until then, all data remains stored locally on the user’s device.
+    </p>
+
+    <h2>5. Your Rights</h2>
+    <p>
+      You have the right to access, correct, or delete your stored data.
+      Since all information is stored locally, deleting the app removes all stored data permanently.
+    </p>
+
+    <h2>6. Contact</h2>
+    <p>
+      For privacy-related questions, please contact:<br>
+      <strong>E-Mail:</strong> <a href="mailto:nealsamanski@googlemail.com">nealsamanski@googlemail.com</a>
+    </p>
+
+    <hr>
+
+    <h1>Imprint</h1>
+    <p><strong>According to § 5 TMG / § 55 RStV</strong></p>
+    <p>
+      <strong>TrackBite – [CompanyName] (in formation)</strong><br>
+      Weiden in der Oberpfalz<br>
+      Germany
+    </p>
+
+    <p><strong>Contact:</strong><br>
+      E-Mail: <a href="mailto:nealsamanski@googlemail.com">nealsamanski@googlemail.com</a><br>
+      Responsible for content: Neal Samanski
+    </p>
+
+    <h2>Disclaimer</h2>
+    <p>
+      The contents of this app and website have been created with the greatest care.
+      However, no guarantee can be given for the accuracy, completeness or timeliness of the information provided.
+      Upon notification of legal violations, such content will be removed immediately.
+    </p>
+
+    <h2>Copyright</h2>
+    <p>
+      All content and works created by the operator of this app are subject to German copyright law.
+      Third-party content is marked as such.
+      Reproduction, editing, or distribution outside the limits of copyright law requires written consent from the respective author.
+    </p>
+
+    <h2>Data Sources</h2>
+    <ul>
+      <li>USDA FoodData Central</li>
+      <li>Australian Food Composition Database – Release 2.0</li>
+      <li>USDA Table of Nutrient Retention Factors – Release 6</li>
+      <li>Antal Bognár: Tables on weight yield of food and retention factors of food constituents</li>
+      <li>Dietary Guidelines for Americans 2020–2025</li>
+    </ul>
+  </div>
+
+  <footer>
+    <p>© 2025 TrackBite – [CompanyName]. All rights reserved.</p>
+  </footer>
 
   <script>
-    const btnEn = document.getElementById("btn-en");
-    const btnDe = document.getElementById("btn-de");
-    const contentEn = document.getElementById("content-en");
-    const contentDe = document.getElementById("content-de");
-
-    btnEn.onclick = () => {
-      contentEn.style.display = "block";
-      contentDe.style.display = "none";
-      btnEn.classList.add("active");
-      btnDe.classList.remove("active");
-    };
-    btnDe.onclick = () => {
-      contentEn.style.display = "none";
-      contentDe.style.display = "block";
-      btnDe.classList.add("active");
-      btnEn.classList.remove("active");
-    };
+    function setLang(lang) {
+      document.getElementById('content-de').classList.remove('visible');
+      document.getElementById('content-en').classList.remove('visible');
+      if (lang === 'de') {
+        document.getElementById('content-de').classList.add('visible');
+      } else {
+        document.getElementById('content-en').classList.add('visible');
+      }
+    }
   </script>
 </body>
 </html>
+
